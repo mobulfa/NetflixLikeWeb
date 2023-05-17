@@ -1,0 +1,160 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0.5;
+  padding: 1px;
+ 
+}
+
+/* body {
+  background-color: rgba(17, 15, 15, 0.5)!important;
+}
+.navbar {
+  background-color: black!important;
+} */
+.navbar-brand img{
+    width: 100px;
+    border: none;
+}
+
+section {
+    margin: 0 1rem;
+    margin-top: 2rem;
+  }
+  section a{
+    text-decoration: none;
+    color: black;
+  }
+h6 {
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+ .container {
+      display: grid;
+      justify-content: start;
+      grid-template-columns: repeat(5, minmax(0, 1fr)); 
+      
+    }
+  .card {
+    width: 200px;
+    height: 500px;
+    border-radius: 30px;
+    border: 8px solid white;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-around;  
+    margin-top: 20px;
+   
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+ 
+  .card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    transition: 2s;
+    overflow: scroll;
+    flex-wrap: inherit;
+
+  }
+  .card:hover .card-body{
+    right: 0;
+
+  }
+  .card-tit{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    
+  }
+  .card-sub-title{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+
+  }
+  .card-info{
+    font-size: 12px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 200px;
+      height: 500px;
+      border-radius: 30px;
+      border: 8px solid white;
+      position: relative;
+      overflow: hidden;
+      justify-content: space-around;  
+      margin-top: 20px;
+     
+    }
+    .container {
+      display: grid;
+      justify-content: start;
+      grid-template-columns: repeat(2, minmax(0, 1fr)); 
+      
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .card {
+      width: 200px;
+      height: 500px;
+      border-radius: 30px;
+      border: 8px solid white;
+      position: relative;
+      overflow: hidden;
+      justify-content: space-around;  
+      margin-top: 20px;
+     
+    }
+    .container {
+      display: grid;
+      justify-content: start;
+      grid-template-columns: repeat(2, minmax(0, 1fr)); 
+      
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    .card {
+      width: 200px;
+      height: 500px;
+      border-radius: 30px;
+      border: 8px solid white;
+      position: relative;
+      overflow: hidden;
+      justify-content: space-around;  
+      margin-top: 20px;
+     
+    }
+    .container {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1, minmax(0, 1fr)); 
+      
+      
+    }
+  }
